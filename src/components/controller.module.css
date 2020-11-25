@@ -1,0 +1,37 @@
+
+.button-area {
+  width: 320px;
+  height: 120px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.button-left {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+
+.button-right {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+}
+
+.button-down {
+  position: absolute;
+  top: 70px;
+  left: 65px;
+}
+
+.button-up {
+  position: absolute;
+  top: 10px;
+  left: 65px;
+}
+
+.button-place {
+  position: absolute;
+  top: 40px;
+  left: 185px;
+}

@@ -1,0 +1,113 @@
+.display-area {
+  width: 480px;
+  height: 480px;
+  /* border: 1px solid black; */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  z-index: auto;
+}
+
+.cell.is-bottom-cell {
+  border-bottom: 1px solid gray;
+}
+
+.cell.is-right-cell {
+  border-right: 1px solid gray;
+}
+
+.cell.is-clear-cell {
+  background-color: #00d1b2;
+}
+
+.cell.is-error-cell {
+  background-color: #ff3860;
+}
+
+.cell.is-selected-cell {
+  outline: 3px solid #363636;
+  z-index: 1;
+}
+
+.inner-cell {
+  width: 70%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-point {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.inner-point.up {
+  top: 0;
+  left: 50%;
+  width: 12%;
+  height: 12%;
+  transform: translate(-50%, 0%);
+}
+.inner-point.right {
+  top: 50%;
+  left: 89%;
+  width: 12%;
+  height: 12%;
+  transform: translate(0%, -50%);
+}
+.inner-point.down {
+  top: 88%;
+  left: 50%;
+  width: 12%;
+  height: 12%;
+  transform: translate(-50%, 0%);
+}
+.inner-point.left {
+  top: 50%;
+  left: 0;
+  width: 12%;
+  height: 12%;
+  transform: translate(0%, -50%);
+}
+
+.inner-point.up-right {
+  top: 0;
+  left: 89%;
+  width: 12%;
+  height: 12%;
+}
+.inner-point.down-right {
+  top: 88%;
+  left: 89%;
+  width: 12%;
+  height: 12%;
+}
+.inner-point.down-left {
+  top: 88%;
+  left: 0;
+  width: 12%;
+  height: 12%;
+}
+.inner-point.up-left {
+  top: 0;
+  left: 0;
+  width: 12%;
+  height: 12%;
+}
