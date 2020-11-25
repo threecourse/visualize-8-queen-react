@@ -29,7 +29,6 @@ jobs:
       # gh-pagesを使って公開
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
-        env:
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./build
+          publish_dir: ./build
